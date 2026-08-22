@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zona de Supervivencia | Contacto</title>
+</head>
+<body>
+
+  <h1>Contacto</h1>
+
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="favoritos.html">Mis favoritos</a> |
+    <a href="generos.html">Estad&iacute;sticas</a> |
+    <a href="multimedia.html">Multimedia</a> |
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <hr>
+
+  <p>
+    &iquest;Quieres recomendarme un juego de supervivencia o reclamarme el top?
+    Llena el formulario.
+  </p>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+      <label for="correo">Correo:</label><br>
+      <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required><br><br>
+
+      <label for="steam">Usuario de Steam:</label><br>
+      <input type="text" id="steam" name="steam" placeholder="Tu nick"><br><br>
+
+      <label for="horas">Horas que juegas por semana:</label><br>
+      <input type="number" id="horas" name="horas" min="0" max="168"><br><br>
+
+      <label for="fecha">Fecha:</label><br>
+      <input type="date" id="fecha" name="fecha">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Sobre tus gustos</legend>
+
+      <p>Modo que prefieres:</p>
+      <input type="radio" id="solo" name="modo" value="solo">
+      <label for="solo">Un jugador</label><br>
+      <input type="radio" id="coop" name="modo" value="coop">
+      <label for="coop">Cooperativo</label><br>
+      <input type="radio" id="pvp" name="modo" value="pvp">
+      <label for="pvp">Competitivo</label>
+
+      <p>G&eacute;neros que juegas:</p>
+      <input type="checkbox" id="g1" name="genero" value="supervivencia">
+      <label for="g1">Supervivencia</label><br>
+      <input type="checkbox" id="g2" name="genero" value="terror">
+      <label for="g2">Terror</label><br>
+      <input type="checkbox" id="g3" name="genero" value="shooter">
+      <label for="g3">Shooter</label><br>
+      <input type="checkbox" id="g4" name="genero" value="mundoabierto">
+      <label for="g4">Mundo abierto</label>
+
+      <p>
+        <label for="plataforma">Plataforma principal:</label><br>
+        <select id="plataforma" name="plataforma">
+          <option value="pc">PC</option>
+          <option value="consola">Consola</option>
+          <option value="movil">M&oacute;vil</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="mensaje">Tu recomendaci&oacute;n:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="40"
+                  placeholder="Dime qu&eacute; juego deber&iacute;a instalar"></textarea>
+      </p>
+    </fieldset>
+
+    <br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpiar</button>
+
+  </form>
+
+  <h2>Otras formas de contacto</h2>
+
+  <ul>
+    <li>Correo: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
+    <li>GitHub: <a href="https://github.com/" target="_blank">Mi perfil</a></li>
+    <li>Regresar al <a href="index.html">inicio</a></li>
+  </ul>
+
+  <hr>
+
+  <footer>
+    <p><small>&copy; 2026 Primo &mdash; Grupo 53 LTI &mdash; FACPYA, UANL</small></p>
+  </footer>
+
+</body>
+</html>
